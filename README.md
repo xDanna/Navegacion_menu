@@ -5,7 +5,6 @@ Asegurate que tienes NODE instalado y ejecuta:
 ```sh
 npm install
 ```
-</br>
 
 # Brief de Diseño para el Sitio Web de Bezier Bar
 
