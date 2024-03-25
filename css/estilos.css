@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root{
     --dark-brown: #0D0D0D;
     --brown: #59463F;
@@ -5,6 +7,7 @@
     --orange: #F2790F;
     --yellow: #F2B33D;
     --whitish: #fdf5e7;
+    --light-brown: #D7CDCA;
 }
 
 html {
@@ -13,6 +16,8 @@ html {
 body{
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
+
 }
 .contenedor{
     width: 1200px;
@@ -38,15 +43,79 @@ header h1 a{
     text-indent: -9999px;
     background-image: url(../imgs/bezierbar_logo.svg);
 }
-header nav{}
-header nav ul{}
-header nav ul li{}
-header nav ul li a{}
-header nav ul li a:hover{}
-header nav ul li a:active{}
+header nav{
+    margin-left: 222px;
+}
+header nav>ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header nav>ul>li{
+    position: relative;
+}
+header nav>ul>li>a{
+    display: block;
+    padding: 41px 25px 40px 25px;
+    text-decoration: none;
+    color: var(--dark-brown);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header nav>ul>li>a:hover{
+ background: linear-gradient(0deg, rgba(242,121,15,1) 0%, rgba(242,179,61,1) 100%);
+}
+header nav>ul>li>a:active{
+    background: var(--orange);
+}
+header nav ul li a span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 13px;
+}
+.caret_down{
+    background: url(../imgs/caret_down.png);
+}
+.caret_up{
+    background: url(../imgs/caret_up.png);
+}
+header nav>ul>li:hover .submenu{
+    display: flex;
+}
+.submenu {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--whitish);
+    display: none;
+}
+.submenu li{
+    border-right: 1px solid var(--light-brown);
+}
+.submenu li a{
+    display: block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+.submenu li a:hover{
+    background: var(--light-brown);
+}
+.submenu li a:active{
+    background:var(--yellow);
+}
+
 
 main {
     padding: 15px;
+}
+main .hero img{
+    width: 100%;
 }
 
 footer{
