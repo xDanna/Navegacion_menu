@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 
 :root{
-    --dark-brown: #0D0D0D;
-    --brown: #59463F;
-    --terra: #8C3604;
-    --orange: #F2790F;
-    --yellow: #F2B33D;
-    --whitish: #fdf5e7;
-    --light-brown: #D7CDCA;
+    --dark-brown: #0d0d0d;
+    --ama: #f2b33d;
+    --nar: #F2790f;
+    --caf: #8c3604;
+    --gri: #59463f;
+    --bla: #fdf5e7;
+}
+*{
+    box-sizing: border-box;
 }
 
 html {
@@ -16,25 +18,30 @@ html {
 body{
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: "Ysabeau SC", sans-serif;
+    background-image: url('/imgs/wooden-table-with-blurred-restaurant-scene.jpg');
+    background-size: 100%;
+} 
 
-}
 .contenedor{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
+}
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 header{
-    background: var(--yellow);
+    background-color: #ffffff90;
     height: 100px;
-    position: relative;
+    position: relative ;
     margin-top: 75px;
-    border-radius: 10px;
 }
 header h1{
     position: absolute;
     top: -82px;
-    left: 0;
+    left: 120px
 }
 header h1 a{
     display: block;
@@ -44,81 +51,73 @@ header h1 a{
     background-image: url(../imgs/bezierbar_logo.svg);
 }
 header nav{
-    margin-left: 222px;
+    margin-left: 850px;
 }
-header nav>ul{
+header nav ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0;
 }
-header nav>ul>li{
-    position: relative;
+header nav ul li{
 }
-header nav>ul>li>a{
+
+header nav ul li a{
     display: block;
-    padding: 41px 25px 40px 25px;
-    text-decoration: none;
-    color: var(--dark-brown);
-    font-weight: 700;
-    text-transform: uppercase;
-}
-header nav>ul>li>a:hover{
- background: linear-gradient(0deg, rgba(242,121,15,1) 0%, rgba(242,179,61,1) 100%);
-}
-header nav>ul>li>a:active{
-    background: var(--orange);
-}
-header nav ul li a span{
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-left: 13px;
-}
-.caret_down{
-    background: url(../imgs/caret_down.png);
-}
-.caret_up{
-    background: url(../imgs/caret_up.png);
-}
-header nav>ul>li:hover .submenu{
-    display: flex;
-}
-.submenu {
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: var(--whitish);
-    display: none;
-}
-.submenu li{
-    border-right: 1px solid var(--light-brown);
-}
-.submenu li a{
-    display: block;
-    padding: 10px 25px;
-    text-transform: uppercase;
+    height: 100px;
+    padding: 45px 25px 0 25px;
     text-decoration: none;
     font-weight: 700;
     color: var(--dark-brown);
+    transition: all 500ms;
 }
-.submenu li a:hover{
-    background: var(--light-brown);
+header nav ul li a:hover{
+    background: linear-gradient(0deg, var(--nar) 0%, var(--ama) 100%);
 }
-.submenu li a:active{
-    background:var(--yellow);
-}
+header nav ul li a:active{
 
-
+}
 main {
-    padding: 15px;
+    padding: 570px;
 }
-main .hero img{
-    width: 100%;
+.events ul li{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 271px;
+    height: 127px;
+    
+}
+.events ul li img{
+    height: 127px;
+    width: auto;
 }
 
 footer{
     background: #59463F;
     padding: 15px;
+}
+
+.submenu li a:hover{
+    background: var(--gri);
+}
+.hero{
+    display: flex;
+}
+.hero img{
+    padding-top: 35px;
+    padding-left: 1000px;
+    height: 500px;
+    width: auto;
+}
+.hero h1{
+    padding-top: 100px;
+    color: white;
+    font-size: 200px;
+    letter-spacing: -5px;
+    line-height: 195px;
+}
+
+.submenu{
+    position: absolute;
+    list-style: none;
 }

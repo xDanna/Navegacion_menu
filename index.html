@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <script src="js/funciones.js"></script>
+
 </head>
 
 <body>
@@ -21,41 +23,43 @@
             <nav class="menu_principal">
                 <ul>
                     <li><a href="">Menú <span class="caret_down"></span></a>
-                    <ul class="submenu">
-                        <li><a href="">Bebidas</a></li>
-                        <li><a href="">Comida</a></li>
-                        <li><a href="">Postres</a></li>
-                    </ul>
+                        <ul class="submenu">
+                            <li><a href="">Bebidas</a></li>
+                            <li><a href="">Comida</a></li>
+                            <li><a href="">Postres</a></li>
+                        </ul>
                     </li>
                     <li><a href="">Eventos <span class="caret_down"></span></a>
-                    <ul class="submenu">
-                        <li><a href="">Promociones</a></li>
-                        <li><a href="">Conciertos</a></li>
-                        <li><a href="">Degustación</a></li>
-                    </ul>
+                        <ul class="submenu">
+                            <li><a href="">Promociones</a></li>
+                            <li><a href="">Conciertos</a></li>
+                            <li><a href="">Degustación</a></li>
+                        </ul>
                     </li>
                     <li><a href="">Merchandising</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>
+            <div class="hero">
+                <h1>PASIÓN LÍQUIDA</h1>
+                <img src="imgs/mug-with-beer-white-background-beautiful-foam-drops-moisture-glass.png" alt="">
+
+            </div>
         </header>
         <main>
-            <div class="hero">
-                <img src="imgs/wooden-table-with-blurred-restaurant-scene.jpg" alt="">
-            
-           
-            </div>
-            <div class="events">
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul>
-                <nav class="nav_carrusel">
-                    <button>Siguiente</button>
-                    <button>Anterior</button>
+            <div class="events glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="imgs/eventos/DALL·E 2024-03-31 21.52.00 - Illustrate a close-up horizontal scene in a creative bar, focusing on a table where a group of designers are gathered. The table is adorned with artis.webp" alt=""></li>
+                        <li class="glide__slide"><img src="imgs/eventos/DALL·E 2024-03-31 21.52.02 - Create a horizontal image focusing on the hands of a person at a creative bar, gently holding an intricately designed cocktail glass. The drink is vib.webp" alt=""></li>
+                        <li class="glide__slide"><img src="imgs/eventos/DALL·E 2024-03-31 21.52.04 - Visualize a close-up, horizontal scene on a small stage in a creative bar, focusing on the details of a microphone stand and the ambient lighting. The.webp" alt=""></li>
+                        <li class="glide__slide"><img src="imgs/eventos/DALL·E 2024-03-31 21.52.05 - Craft a horizontal image capturing an intimate moment at a creative bar, with a close-up view of two people engaging in a quiet conversation. The focu.webp" alt=""></li>
+                        <li class="glide__slide"><img src="imgs/eventos/DALL·E 2024-03-31 21.52.08 - Design a horizontal image focusing on a bartender's hands as they craft a signature cocktail at a creative bar. The scene is a close-up of the cocktai.webp" alt=""></li>
+                    </ul>
+                </div>
+                <nav class="nav__carrusel glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Anterior</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Siguiente</button>
                 </nav>
             </div>
         </main>
