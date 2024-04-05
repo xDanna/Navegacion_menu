@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+@font-face {
+    font-family:'Rumble Brave';
+    src: url('/fonts/Rumble-Brave.otf') format('truetype');
+}
 
 :root{
     --dark-brown: #0d0d0d;
     --ama: #f2b33d;
     --nar: #F2790f;
-    --caf: #8c3604;
+    --caf: #8C3604;
     --gri: #59463f;
-    --bla: #fdf5e7;
+    --bla: #FDF5E7;
 }
 *{
     box-sizing: border-box;
@@ -19,8 +23,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Ysabeau SC", sans-serif;
-    background-image: url('/imgs/wooden-table-with-blurred-restaurant-scene.jpg');
+    background-image: url('/imgs/fondo.png');
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: var(--bla);
+   
 } 
 
 .contenedor{
@@ -33,22 +40,24 @@ body{
 }
 
 header{
-    background-color: #ffffff90;
+    background-color: #fdf5e7ae;
     height: 100px;
     position: relative ;
     margin-top: 75px;
 }
 header h1{
     position: absolute;
-    top: -82px;
-    left: 120px
+    top: -70px;
+    left: 120px;
+    
 }
 header h1 a{
     display: block;
-    width: 183px;
-    height: 223px;
+    width: 163px;
+    height: 203px;
     text-indent: -9999px;
     background-image: url(../imgs/bezierbar_logo.svg);
+    font-weight: normal;
 }
 header nav{
     margin-left: 850px;
@@ -65,21 +74,19 @@ header nav ul li{
 header nav ul li a{
     display: block;
     height: 100px;
-    padding: 45px 25px 0 25px;
+    padding: 43px 25px 0 25px;
     text-decoration: none;
     font-weight: 700;
     color: var(--dark-brown);
     transition: all 500ms;
 }
 header nav ul li a:hover{
-    background: linear-gradient(0deg, var(--nar) 0%, var(--ama) 100%);
+    background: rgb(186,186,186);
+    background: linear-gradient(0deg, rgba(186,186,186,0.4033262963388481) 0%, rgba(255,247,234,0.6330181730895483) 100%);
 }
 header nav ul li a:active{
+}
 
-}
-main {
-    padding: 570px;
-}
 .events ul li{
     border-radius: 10px;
     overflow: hidden;
@@ -93,31 +100,52 @@ main {
 }
 
 footer{
-    background: #59463F;
+    background: var(--caf);
     padding: 15px;
 }
 
 .submenu li a:hover{
-    background: var(--gri);
+    
+    display: block;
+    background: var(--caf);
 }
-.hero{
-    display: flex;
-}
+
+
 .hero img{
     padding-top: 35px;
     padding-left: 1000px;
     height: 500px;
     width: auto;
 }
-.hero h1{
-    padding-top: 100px;
-    color: white;
-    font-size: 200px;
-    letter-spacing: -5px;
-    line-height: 195px;
+.hero h1 {
+    color: var(--bla);
+    font-size: 180px;
+    font-family: 'Rumble Brave';
+    font-weight: normal; 
+    margin-left: 130px; 
+}
+.hero h1:first-of-type {
+    padding-top: 60px;
+}
+.hero h1:nth-child(2) {
+    padding-top: 245px;
+}
+.subtexto h3{
+    padding-top: 300px;
+    padding-left: 120px;
+    font-family: "Ysabeau SC", sans-serif;
+    font-weight: normal;  
+    color: #FDF5E7;
 }
 
 .submenu{
     position: absolute;
     list-style: none;
+    display: none;
 }
+main {
+    padding: 750px 100px 100px 100px;
+}
+
+
+
